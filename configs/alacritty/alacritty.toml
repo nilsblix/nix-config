@@ -1,0 +1,14 @@
+[font]
+normal = { family = "Hack Nerd Font Mono" }
+size = 21.0
+
+[window]
+title = "Alacritty"
+dynamic_title = false
+startup_mode = "Maximized"
+
+[mouse]
+hide_when_typing = true
+
+[selection]
+save_to_clipboard = true

@@ -1,0 +1,21 @@
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+
+plugins=(
+    git
+)
+
+source $ZSH/oh-my-zsh.sh
+
+source <(fzf --zsh)
+
+# export PATH=$PATH:~/.local/share/zig-macos-aarch64-0.14.0
+export PATH=$PATH:~/.local/share/zig-macos-aarch64-0.13.0
+
+alias proj="cd ~/Documents/projects"
+alias vim="nvim"
+
+alias l="eza --long --all"
+alias ls="eza"
+alias la="eza --all"
+alias ll="eza --long"

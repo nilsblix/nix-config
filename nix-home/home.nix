@@ -9,9 +9,14 @@
 	programs.home-manager.enable = true;
 
 	home.packages = with pkgs; [
-		hello
 		neovim
 		alacritty
         tmux
 	];
+
+    home.file = {
+        ".config/nvim".source = ~/dotfiles/configs/nvim;
+        ".config/alacritty".source = ~/dotfiles/configs/alacritty;
+        ".tmux.conf".source = ~/dotfiles/configs/tmux/tmux.conf;
+    };
 }

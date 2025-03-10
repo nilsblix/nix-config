@@ -20,6 +20,7 @@
 		casks = [
 			"raycast"
 			"surfshark"
+            "spotify"
 		];
 		onActivation.cleanup = "zap";
 	};

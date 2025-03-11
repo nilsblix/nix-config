@@ -22,6 +22,7 @@
 			"surfshark"
             "spotify"
             "google-chrome"
+            "karabiner-elements"
 		];
 		onActivation.cleanup = "zap";
 	};

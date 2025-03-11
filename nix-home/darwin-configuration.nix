@@ -35,6 +35,11 @@
         controlcenter.NowPlaying = false;
 	};
 
+    power.sleep = {
+        computer = 25;
+        display = 20;
+    };
+
 	fonts.packages = [
 		pkgs.nerd-fonts.hack
 	];

@@ -29,6 +29,8 @@
 	system.defaults = {
 		dock.autohide = true;
         controlcenter.Sound = true;
+        controlcenter.Bluetooth = true;
+        controlcenter.NowPlaying = false;
 	};
 
 	fonts.packages = [

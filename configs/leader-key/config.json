@@ -1,7 +1,7 @@
 {
     "actions" : [
         {
-            "key" : "t",
+            "key" : "e",
             "label" : "Alacritty",
             "type" : "command",
             "value" : "open -a Alacritty"
@@ -38,6 +38,12 @@
                     "label": "Messages",
                     "type": "command",
                     "value": "open -a Messages"
+                },
+                {
+                    "key": "v",
+                    "label": "Messages",
+                    "type": "command",
+                    "value": "open -a SurfShark"
                 },
             ],
             "key": "o",

@@ -23,6 +23,7 @@
             "spotify"
             "google-chrome"
             "karabiner-elements"
+            "leader-key"
 		];
 		onActivation.cleanup = "zap";
 	};

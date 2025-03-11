@@ -21,12 +21,14 @@
 			"raycast"
 			"surfshark"
             "spotify"
+            "google-chrome"
 		];
 		onActivation.cleanup = "zap";
 	};
 
 	system.defaults = {
 		dock.autohide = true;
+        controlcenter.Sound = true;
 	};
 
 	fonts.packages = [

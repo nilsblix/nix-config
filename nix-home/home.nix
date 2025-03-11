@@ -18,6 +18,7 @@
         eza
         starship
         skhd
+        zig_0_13
 	];
 
     home.file = {

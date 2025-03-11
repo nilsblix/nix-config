@@ -17,7 +17,7 @@
         fzf
         eza
         starship
-        skhd
+        # skhd
         zig_0_13
 	];
 
@@ -28,7 +28,7 @@
         ".tmux.conf".source = ~/dotfiles/configs/tmux/tmux.conf;
         ".config/yazi".source = ~/dotfiles/configs/yazi;
         ".config/starship".source = ~/dotfiles/configs/starship;
-        ".config/skhd".source = ~/dotfiles/configs/skhd;
+        # ".config/skhd".source = ~/dotfiles/configs/skhd;
         ".config/karabiner".source = ~/dotfiles/configs/karabiner; # installed with brew
     };
 }

@@ -30,6 +30,6 @@
         ".config/starship".source = ~/dotfiles/configs/starship;
         # ".config/skhd".source = ~/dotfiles/configs/skhd;
         ".config/karabiner".source = ~/dotfiles/configs/karabiner; # installed with brew
-        ".config/leaderkey".source = ~/dotfiles/configs/leader-key;
+        "Library/Application Support/Leader Key".source = ~/dotfiles/configs/leader-key;
     };
 }

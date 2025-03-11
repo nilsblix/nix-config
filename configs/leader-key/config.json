@@ -1,0 +1,49 @@
+{
+    "actions" : [
+        {
+            "key" : "t",
+            "label" : "Alacritty",
+            "type" : "command",
+            "value" : "open -a Alacritty"
+        },
+        {
+            "actions": [
+                {
+                    "key": "s",
+                    "label": "Safari",
+                    "type": "command",
+                    "value": "open -a Safari"
+                },
+                {
+                    "key": "g",
+                    "label": "Chrome",
+                    "type": "command",
+                    "value": "open -a 'Google Chrome'"
+                },
+            ],
+            "key": "f",
+            "label": "Browsers",
+            "type": "group",
+        },
+        {
+            "actions": [
+                {
+                    "key": "s",
+                    "label": "Spotify",
+                    "type": "command",
+                    "value": "open -a Spotify"
+                },
+                {
+                    "key": "m",
+                    "label": "Messages",
+                    "type": "command",
+                    "value": "open -a Messages"
+                },
+            ],
+            "key": "o",
+            "label": "Open",
+            "type": "group"
+        },
+    ],
+    "type" : "group"
+}

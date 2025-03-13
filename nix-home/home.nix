@@ -19,6 +19,7 @@
         starship
         # skhd
         zig_0_13
+        nodejs_23
 	];
 
     home.file = {

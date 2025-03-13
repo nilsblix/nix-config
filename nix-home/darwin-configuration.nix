@@ -17,6 +17,10 @@
 
 	homebrew = {
 		enable = true;
+        brews = [
+            "node@23"
+            # "vite"
+        ];
 		casks = [
 			"raycast"
 			"surfshark"
@@ -36,8 +40,8 @@
 	};
 
     power.sleep = {
-        computer = 25;
-        display = 20;
+        computer = 50;
+        display = 30;
     };
 
 	fonts.packages = [

@@ -13,11 +13,9 @@
 		neovim
 		alacritty
         tmux
-        yazi
         fzf
         eza
         starship
-        # skhd
         zig_0_13
         nodejs_23
 	];
@@ -27,9 +25,7 @@
         ".config/nvim".source = ~/dotfiles/configs/nvim;
         ".config/alacritty".source = ~/dotfiles/configs/alacritty;
         ".tmux.conf".source = ~/dotfiles/configs/tmux/tmux.conf;
-        ".config/yazi".source = ~/dotfiles/configs/yazi;
         ".config/starship".source = ~/dotfiles/configs/starship;
-        # ".config/skhd".source = ~/dotfiles/configs/skhd;
         ".config/karabiner".source = ~/dotfiles/configs/karabiner; # installed with brew
         "Library/Application Support/Leader Key".source = ~/dotfiles/configs/leader-key;
     };

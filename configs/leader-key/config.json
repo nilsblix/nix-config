@@ -28,6 +28,12 @@
         {
             "actions": [
                 {
+                    "key": "d",
+                    "label": "Digiexam",
+                    "type": "command",
+                    "value": "open -a Digiexam"
+                },
+                {
                     "key": "s",
                     "label": "Spotify",
                     "type": "command",

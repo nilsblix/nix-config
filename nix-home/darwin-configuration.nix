@@ -19,7 +19,6 @@
 		enable = true;
         brews = [
             "node@23"
-            # "vite"
         ];
 		casks = [
 			"raycast"

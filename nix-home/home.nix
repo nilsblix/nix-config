@@ -27,6 +27,6 @@
         ".tmux.conf".source = ~/dotfiles/configs/tmux/tmux.conf;
         ".config/starship".source = ~/dotfiles/configs/starship;
         ".config/karabiner".source = ~/dotfiles/configs/karabiner; # installed with brew
-        "Library/Application Support/Leader Key".source = ~/dotfiles/configs/leader-key;
+        "Library/Application Support/Leader Key".source = ~/dotfiles/configs/leader-key; # installed with brew
     };
 }

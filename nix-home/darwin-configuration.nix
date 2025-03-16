@@ -2,7 +2,6 @@
 
 {
 	system.stateVersion = 4;
-	# services.nix-daemon.enable = true;
 	ids.gids.nixbld = 350;
 
 	nix.settings.experimental-features = "nix-command flakes";
@@ -41,6 +40,12 @@
     power.sleep = {
         computer = 50;
         display = 30;
+    };
+
+    networking = {
+        computerName = "Nilss Macbook Pro 14";
+        hostName = "nvb-nix-darwin";
+        localHostName = "nvb-nix-darwin"; 
     };
 
 	fonts.packages = [

@@ -16,9 +16,6 @@
 
 	homebrew = {
 		enable = true;
-        # brews = [
-        #     "node@23"
-        # ];
 		casks = [
 			"raycast"
 			"surfshark"

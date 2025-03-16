@@ -24,12 +24,12 @@
 	darwinConfigurations."nvb" = nix-darwin.lib.darwinSystem {
 		inherit system;
 		modules = [
-			./darwin-configuration.nix
+			./nix/darwin-configuration.nix
 			home-manager.darwinModules.home-manager
 			{
 				home-manager.useGlobalPkgs = true;
 				home-manager.useUserPackages = true;
-				home-manager.users.nilsblix = import ./home.nix;
+				home-manager.users.nilsblix = import ./nix/home.nix;
 			}
 			nix-homebrew.darwinModules.nix-homebrew
 			{
@@ -42,7 +42,7 @@
 
 	homeConfigurations."nilsblix" = home-manager.lib.homeManagerConfiguration {
 		pkgs = nixpkgs.legacyPackages.${system};
-		modules = [ ./home.nix ];
+		modules = [ ./nix/home.nix ];
 	};
   };
 }

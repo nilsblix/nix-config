@@ -1,5 +1,5 @@
 
-format = '\[$time\]-\[$username\]-\[$hostname\]-\[$directory\]-\[$branch\]-\[$all_status\]-\[$status\]$line_break $character'
+format = '\[$time\]-\[$username\]-\[$hostname\]-\[$directory\]-\[$status\]-\[$git_branch\]-\[$git_status\]-$line_break $character'
 add_newline = true
 
 palette = 'alacritty'
@@ -66,10 +66,10 @@ failure_style = 'red'
 
 [git_branch]
 symbol = ""
-format = '[$branch(:$branch)](bold purple)'
+format = '[$branch(:$branch)](fg:bold white)'
 
 [git_status]
-format = '[$all_status](bold red)'
+format = '[$all_status](fg:bold yellow)'
 
 [character]
 success_symbol = "[➜](bold green)"

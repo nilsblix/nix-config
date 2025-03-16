@@ -28,6 +28,12 @@
         {
             "actions": [
                 {
+                    "key": "n",
+                    "label": "Notes",
+                    "type": "command",
+                    "value": "open -a Notes"
+                },
+                {
                     "key": "d",
                     "label": "Digiexam",
                     "type": "command",

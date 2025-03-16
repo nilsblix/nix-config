@@ -66,7 +66,7 @@ failure_style = 'red'
 
 [git_branch]
 symbol = ""
-format = '[$branch(:$branch)](fg:bold white)'
+format = '[$branch(:$branch)](fg:bold red)'
 
 [git_status]
 format = '[$all_status](fg:bold yellow)'
@@ -78,26 +78,3 @@ error_symbol = "[➜](bold red)"
 
 [line_break]
 disabled = false
-
-# [character]
-# success_symbol = "[➜](bold green)"
-# error_symbol = "[➜](bold red)"
-#
-# [directory]
-# truncation_length = 3
-# truncate_to_repo = false
-# style = "bold blue"
-#
-# [git_branch]
-# symbol = ""
-# style = "bold purple"
-#
-# [git_status]
-# style = "bold red"
-#
-# [cmd_duration]
-# disabled = true
-#
-# [line_break]
-# disabled = true
-#

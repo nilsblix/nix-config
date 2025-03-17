@@ -13,5 +13,3 @@ alias ll="eza --long"
 
 alias hms="home-manager switch --flake"
 alias drs="darwin-rebuild switch --flake"
-# alias hmsi="home-manager switch --impure --flake"
-# alias drsi="darwin-rebuild switch --impure --flake"

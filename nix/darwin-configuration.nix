@@ -19,25 +19,25 @@
 		casks = [
 			"raycast"
 			"surfshark"
-            "spotify"
-            "google-chrome"
-            "karabiner-elements"
-            "leader-key"
+			"spotify"
+	    		"google-chrome"
+			"karabiner-elements"
+			"leader-key"
 		];
 		onActivation.cleanup = "zap";
 	};
 
 	system.defaults = {
 		dock.autohide = true;
-        controlcenter.Sound = true;
-        controlcenter.Bluetooth = true;
-        controlcenter.NowPlaying = false;
+		controlcenter.Sound = true;
+		controlcenter.Bluetooth = true;
+		controlcenter.NowPlaying = false;
 	};
 
-    power.sleep = {
-        computer = 50;
-        display = 30;
-    };
+	    power.sleep = {
+		computer = 50;
+		display = 30;
+	    };
 
     networking = {
         computerName = "Nilss Macbook Pro 14";

@@ -15,7 +15,7 @@
 
     networking = {
         computerName = "Nilss Macbook Pro 14";
-        hostName = "nvb-nix-darwin"; # this changes the one inside tmux
-        localHostName = "nvb-nix-darwin"; 
+        hostName = "nix-darwin"; # this changes the one inside tmux
+        localHostName = "nix-darwin"; 
     };
 }

@@ -15,7 +15,6 @@
 		tmux
 		fzf
 		eza
-		starship
 		zig_0_13
 		nodejs_23
 	];
@@ -26,7 +25,6 @@
         ".config/nvim".source = ../modules/shared/nvim;
         ".config/alacritty".source = ../modules/shared/alacritty;
         ".tmux.conf".source = ../modules/shared/tmux/tmux.conf;
-        ".config/starship".source = ../modules/shared/starship;
 
         # darwin
         ".config/karabiner".source = ../modules/darwin/karabiner; # installed with brew

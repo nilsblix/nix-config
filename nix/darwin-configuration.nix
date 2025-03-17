@@ -21,6 +21,7 @@
 			"surfshark"
 			"spotify"
             "google-chrome"
+            "signal"
 			"karabiner-elements"
 			"leader-key"
 		];

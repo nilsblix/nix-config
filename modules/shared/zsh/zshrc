@@ -1,7 +1,29 @@
 source <(fzf --zsh)
 
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=~/.config/starship/starship.toml
+# eval "$(starship init zsh)"
+
+PROMPT='%F{red}[%F{yellow}%n%F{green}@%F{blue}%m%F{magenta} %~%F{red}]%f$ '
+
+# git_branch() {
+#   local branch
+#   branch=$(git symbolic-ref --short HEAD 2>/dev/null || git rev-parse --short HEAD 2>/dev/null)
+#   [[ -n $branch ]] && echo " (%F{cyan}$branch%F{red})"
+# }
+#
+# PROMPT='%F{red}[%F{yellow}%n%F{green}@%F{blue}%m%F{magenta} %~%F{red}$(git_branch)]%f\$ '
+
+# git_branch() {
+#   local branch
+#   branch=$(git symbolic-ref --short HEAD 2>/dev/null || git rev-parse --short HEAD 2>/dev/null)
+#   [[ -n $branch ]] && echo " (%F{cyan}$branch%F{red})"
+# }
+#
+# autoload -Uz add-zsh-hook
+# update_prompt() {
+#   PROMPT='%F{red}[%F{yellow}%n%F{green}@%F{blue}%m%F{magenta} %~%F{red}'"$(git_branch)"']%f\$ '
+# }
+# add-zsh-hook precmd update_prompt
 
 alias proj="cd ~/personal"
 alias vim="nvim"

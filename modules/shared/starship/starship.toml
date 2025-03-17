@@ -1,5 +1,5 @@
 
-format = '\[$time\]-\[$username\]-\[$hostname\]-\[$directory\]-\[$status\]-\[$git_branch\]-\[$git_status\]-$line_break $character'
+format = '\[$time\]-\[$username\]-\[$hostname\]-\[$directory\]-\[$status\]-\[$git_branch\]-\[$git_status\]$line_break $character'
 add_newline = true
 
 palette = 'alacritty'

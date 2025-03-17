@@ -53,7 +53,7 @@
                 },
                 {
                     "key": "v",
-                    "label": "Messages",
+                    "label": "Surfshark",
                     "type": "command",
                     "value": "open -a SurfShark"
                 },

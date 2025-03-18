@@ -15,8 +15,6 @@
 		tmux
 		fzf
 		eza
-		zig_0_13
-		nodejs_23
 	];
 
     home.file = {

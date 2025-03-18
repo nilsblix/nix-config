@@ -17,6 +17,7 @@ function ColorMyself(color)
 end
 
 return {
+	{ "brenoprata10/nvim-highlight-colors" },
 	{
 		"folke/tokyonight.nvim",
 		config = function()

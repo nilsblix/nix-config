@@ -12,8 +12,8 @@
 		zsh
 		home-manager
 		ripgrep
-		zig_0_13
-        # zig_0_14
+		# zig_0_13
+        zig_0_14
 		nodejs_23
 	];
 

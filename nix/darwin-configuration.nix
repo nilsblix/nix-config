@@ -12,7 +12,6 @@
 		zsh
 		home-manager
 		ripgrep
-		# zig_0_13
         zig_0_14
 		nodejs_23
 	];
@@ -31,8 +30,9 @@
 		onActivation.cleanup = "zap";
 	};
 
-	fonts.packages = [
-		pkgs.nerd-fonts.hack
+	fonts.packages = with pkgs; [
+		nerd-fonts.hack
+        nerd-fonts.iosevka
 	];
 
     imports = [

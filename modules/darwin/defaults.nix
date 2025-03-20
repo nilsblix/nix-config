@@ -6,6 +6,11 @@
             dock = {
                 autohide = true;
                 show-recents = false;
+
+                wvous-tl-corner = 5; # start screensaver
+                wvous-bl-corner = 10; # put display to sleep
+                wvous-tr-corner = 1; # off
+                wvous-br-corner = 1; # off
             };
             controlcenter = {
                 Sound = true;
@@ -14,8 +19,8 @@
             };
 
             NSGlobalDomain = {
-                KeyRepeat = 3; # how long between each repeat
-                InitialKeyRepeat = 15; # how long before repeating
+                KeyRepeat = 2; # how long between each repeat
+                InitialKeyRepeat = 20; # how long before repeating
             };
 
             CustomUserPreferences = {

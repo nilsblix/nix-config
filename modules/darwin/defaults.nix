@@ -15,13 +15,13 @@
 
             NSGlobalDomain = {
                 KeyRepeat = 3; # how long between each repeat
-                InitialRepeat = 15; # how long before repeating
+                InitialKeyRepeat = 15; # how long before repeating
             };
 
-            CustomUserPreferances = {
+            CustomUserPreferences = {
                 "com.apple.screensaver" = {
                     askForPassword = 1;
-                    askForPassword = 0;
+                    askForPasswordDelay = 0;
                 };
             };
         };
@@ -38,5 +38,5 @@
         localHostName = "nix-darwin"; 
     };
 
-    security.pam.enableSudoTouchIdAuth = true;
+    security.pam.services.sudo_local.touchIdAuth = true;
 }

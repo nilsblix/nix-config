@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+    # test
     home.username = "nilsblix";
     home.homeDirectory = "/Users/nilsblix";
 

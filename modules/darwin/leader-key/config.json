@@ -9,6 +9,19 @@
         {
             "actions": [
                 {
+                    "key": "a",
+                    "label": "Toggle System Appearance",
+                    "type": "url",
+                    "value": "raycast://extensions/raycast/system/toggle-system-appearance"
+                },
+            ],
+            "key": "r",
+            "label": "Raycast",
+            "type": "group",
+        },
+        {
+            "actions": [
+                {
                     "key": "s",
                     "label": "Safari",
                     "type": "command",

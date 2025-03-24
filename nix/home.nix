@@ -1,21 +1,21 @@
 { config, pkgs, ... }:
 
 {
-	home.username = "nilsblix";
-	home.homeDirectory = "/Users/nilsblix";
+    home.username = "nilsblix";
+    home.homeDirectory = "/Users/nilsblix";
 
-	home.stateVersion = "23.05";
+    home.stateVersion = "23.05";
 
-	programs.home-manager.enable = true;
+    programs.home-manager.enable = true;
 
-	home.packages = with pkgs; [
-		tokei
-		neovim
-		alacritty
-		tmux
-		fzf
-		eza
-	];
+    home.packages = with pkgs; [
+        tokei
+        neovim
+        alacritty
+        tmux
+        fzf
+        eza
+    ];
 
     home.file = {
         # shared

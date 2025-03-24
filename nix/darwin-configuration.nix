@@ -14,6 +14,7 @@
 		ripgrep
         zig_0_14
 		nodejs_23
+        cargo
 	];
 
 	homebrew = {

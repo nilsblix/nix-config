@@ -23,7 +23,7 @@
             "google-chrome"
             "signal"
 			"karabiner-elements"
-			"leader-key"
+			# "leader-key"
 		];
 		onActivation.cleanup = "zap";
 	};

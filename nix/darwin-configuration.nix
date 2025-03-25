@@ -34,7 +34,7 @@
 	];
 
     imports = [
-        ../modules/darwin/defaults.nix
+        ../modules/darwin/mac_options.nix
     ];
 
 	programs.zsh.enable = true;

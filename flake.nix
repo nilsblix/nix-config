@@ -17,7 +17,7 @@
     };
 
     outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew }: let
-            system = "aarch64-darwin";
+        system = "aarch64-darwin";
     in {
         darwinConfigurations."nvb" = nix-darwin.lib.darwinSystem {
 		    inherit system;
@@ -28,8 +28,7 @@
                     home-manager.useUserPackages = true;
                     home-manager.users.nilsblix = import ./nix/home.nix;
 		        }
-                nix-homebrew.darwinModules.nix-homebrew
-                {
+                nix-homebrew.darwinModules.nix-homebrew {
                     nix-homebrew.enable = true;
                     nix-homebrew.enableRosetta = true;
                     nix-homebrew.user = "nilsblix";

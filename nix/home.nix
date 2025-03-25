@@ -18,6 +18,7 @@
         tmux
         fzf
         eza
+        yazi
     ];
 
     home.file = {

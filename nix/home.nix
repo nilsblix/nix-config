@@ -9,14 +9,14 @@
     programs.home-manager.enable = true;
 
     home.packages = with pkgs; [
-        aerospace
         zig_0_14
 		nodejs_23
+        python39
         cargo
         tokei
         neovim
         alacritty
-        tmux
+       tmux
         fzf
         eza
         yazi
@@ -31,8 +31,10 @@
 
         # darwin
         ".config/karabiner".source = ../modules/darwin/karabiner; # installed with brew
-        ".config/aerospace/aerospace.toml".source = ../modules/darwin/aerospace.toml;
-        "Library/Application Support/Leader Key".source = ../modules/darwin/leader-key; # installed with brew
+        # ".config/aerospace/aerospace.toml".source = ../modules/darwin/aerospace.toml;
+        # "Library/Application Support/Leader Key".source = ../modules/darwin/leader-key; # installed with brew
+        # ".config/skhd/skhdrc".source = ../modules/darwin/skhdrc;
+        ".hammerspoon".source = ../modules/darwin/hammerspoon;
     };
 
     programs.git = {

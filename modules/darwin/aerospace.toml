@@ -15,9 +15,8 @@ f12 = "mode z"
 e = [ "exec-and-forget open -a Alacritty", "mode main" ]
 r = "mode raycast"
 o = "mode open_apps"
-f = "mode browsers"
+f = "mode fbrowsers"
 esc = "mode main"
-# fallback = "mode main"
 
 [mode.raycast.binding]
 a = [ "exec-and-forget open raycast://extensions/raycast/system/toggle-system-appearance", "mode main" ]
@@ -31,7 +30,7 @@ n = [ "exec-and-forget open -a Notes", "mode main" ]
 d = [ "exec-and-forget open -a Digiexam", "mode main" ]
 esc = "mode main"
 
-[mode.browsers.binding]
+[mode.fbrowsers.binding]
 s = [ "exec-and-forget open -a Safari", "mode main" ]
 g = [ "exec-and-forget open -a 'Google Chrome'", "mode main" ]
 esc = "mode main"

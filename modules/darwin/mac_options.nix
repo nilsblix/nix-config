@@ -25,7 +25,7 @@
 
             CustomUserPreferences = {
                 "com.apple.screensaver" = {
-                    askForPassword = 1;
+                    askForPassword = true;
                     askForPasswordDelay = 0;
                 };
             };

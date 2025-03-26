@@ -34,7 +34,32 @@ return {
 					variables = { italic = false },
 				},
 			})
-			ColorMyself()
+			-- ColorMyself()
+		end,
+	},
+	{
+		"ellisonleao/gruvbox.nvim",
+		config = function()
+			require("gruvbox").setup({
+				-- transparent_mode = true,
+				italic = {
+					strings = false,
+					emphasis = false,
+					comments = false,
+					folds = false,
+					operators = false,
+				},
+				overrides = {
+					StatusLine = { bg = "#ababab", fg = "#3E1018" },
+					StatusLineNC = { bg = "#3c3836", fg = "#1E2018" },
+				},
+			})
+			vim.cmd.colorscheme("gruvbox")
+			vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+			vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
+			vim.cmd("highlight SignColumn guibg=NONE")
+			vim.cmd("highlight LineNr guibg=NONE")
 		end,
 	},
 }

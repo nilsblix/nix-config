@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
--- test
 
 vim.keymap.set("n", "<leader>N", ":Ex<CR>")
 

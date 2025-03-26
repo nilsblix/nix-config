@@ -15,9 +15,6 @@ return {
 		"nvim-highlight-colors",
 	},
 	{
-		"brenoprata10/nvim-highlight-colors",
-	},
-	{
 		"eandrju/cellular-automaton.nvim",
 	},
 }

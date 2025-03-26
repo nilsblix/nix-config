@@ -18,6 +18,8 @@ vim.schedule(function()
 	vim.opt.clipboard = "unnamedplus"
 end)
 
+vim.opt.guicursor = "n-v-i-c:block-Cursor"
+
 local border_style = "rounded"
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = border_style })

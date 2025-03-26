@@ -24,7 +24,6 @@
             "signal"
 			"karabiner-elements"
 			"leader-key"
-            "hammerspoon"
 		];
 		onActivation.cleanup = "zap";
 	};

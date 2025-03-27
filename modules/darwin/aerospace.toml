@@ -44,13 +44,9 @@
 
 [mode.open.binding]
     esc = "mode main"
+    shift-n = "mode new_open"
 
-    e = [ '''exec-and-forget osascript -e '
-        tell application "Alacritty"
-            do script
-            activate
-        end tell'
-    ''', "mode main"]
+    e = [ "exec-and-forget open -a Alacritty", "mode main" ]
     f = [ "exec-and-forget open -a Safari", "mode main" ]
     c = [ "exec-and-forget open -a 'Google Chrome'", "mode main" ]
     m = [ "exec-and-forget open -a Messages", "mode main" ]
@@ -58,3 +54,13 @@
     n = [ "exec-and-forget open -a Notes", "mode main" ]
     i = [ "exec-and-forget open -a Signal", "mode main" ]
 
+[mode.new_open.binding]
+    esc = "mode main"
+
+    e = [ '''exec-and-forget osascript -e '
+        tell application "Alacritty"
+            do script
+            activate
+        end tell'
+    ''', "mode main"]
+    

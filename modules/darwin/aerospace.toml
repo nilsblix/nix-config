@@ -39,6 +39,7 @@
     c = [ "move-node-to-workspace c", "mode main" ]
     s = [ "move-node-to-workspace s", "mode main" ]
     m = [ "move-node-to-workspace m", "mode main" ]
+    n = [ "move-node-to-workspace n", "mode main" ]
     i = [ "move-node-to-workspace i", "mode main" ]
 
 [mode.open.binding]

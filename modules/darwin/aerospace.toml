@@ -1,0 +1,59 @@
+[[on-window-detected]]
+    check-further-callbacks = true
+    run = "layout floating"
+
+[gaps]
+    inner.horizontal = 0
+    inner.vertical = 0
+    outer.left = 0
+    outer.bottom = 0
+    outer.top = 0
+    outer.right = 0
+
+[mode.main.binding]
+    f12 = "mode leader"
+    cmd-tab = "workspace-back-and-forth"
+
+[mode.leader.binding]
+    esc = "mode main"
+
+    e = [ "workspace e", "mode main" ]
+    f = [ "workspace f", "mode main" ]
+    c = [ "workspace c", "mode main" ]
+    s = [ "workspace s", "mode main" ]
+    m = [ "workspace m", "mode main" ]
+    n = [ "workspace n", "mode main" ]
+    i = [ "workspace i", "mode main" ]
+
+    shift-m = "mode move_node"
+
+    o = "mode open"
+
+    t = [ "layout floating tiling", "mode main" ]
+
+[mode.move_node.binding]
+    esc = "mode main"
+
+    e = [ "move-node-to-workspace e", "mode main" ]
+    f = [ "move-node-to-workspace f", "mode main" ]
+    c = [ "move-node-to-workspace c", "mode main" ]
+    s = [ "move-node-to-workspace s", "mode main" ]
+    m = [ "move-node-to-workspace m", "mode main" ]
+    i = [ "move-node-to-workspace i", "mode main" ]
+
+[mode.open.binding]
+    esc = "mode main"
+
+    e = [ '''exec-and-forget osascript -e '
+        tell application "Alacritty"
+            do script
+            activate
+        end tell'
+    ''', "mode main"]
+    f = [ "exec-and-forget open -a Safari", "mode main" ]
+    c = [ "exec-and-forget open -a 'Google Chrome'", "mode main" ]
+    m = [ "exec-and-forget open -a Messages", "mode main" ]
+    s = [ "exec-and-forget open -a Spotify", "mode main" ]
+    n = [ "exec-and-forget open -a Notes", "mode main" ]
+    i = [ "exec-and-forget open -a Signal", "mode main" ]
+

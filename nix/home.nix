@@ -9,6 +9,7 @@
     programs.home-manager.enable = true;
 
     home.packages = with pkgs; [ # alphabetical order
+        aerospace
         alacritty
         cargo
         eza
@@ -30,8 +31,8 @@
         ".tmux.conf".source = ../modules/shared/tmux/tmux.conf;
 
         # darwin
+        ".config/aerospace/aerospace.toml".source = ../modules/darwin/aerospace.toml;
         ".config/karabiner".source = ../modules/darwin/karabiner; # installed with brew
-        "Library/Application Support/Leader Key".source = ../modules/darwin/leader-key; # installed with brew
     };
 
     programs.git = {

@@ -17,12 +17,12 @@
 	homebrew = {
 		enable = true;
 		casks = [
-			"raycast"
-			"surfshark"
-			"spotify"
             "google-chrome"
-            "signal"
+			"raycast"
 			"karabiner-elements"
+            "signal"
+			"spotify"
+			"surfshark"
 		];
 		onActivation.cleanup = "zap";
 	};

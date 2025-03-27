@@ -8,18 +8,18 @@
 
     programs.home-manager.enable = true;
 
-    home.packages = with pkgs; [
-        zig_0_14
-		nodejs_23
-        python39
-        cargo
-        tokei
-        neovim
+    home.packages = with pkgs; [ # alphabetical order
         alacritty
-        tmux
-        fzf
+        cargo
         eza
+        fzf
+        neovim
+        nodejs_23
+        python39
+        tmux
+        tokei
         yazi
+        zig_0_14
     ];
 
     home.file = {

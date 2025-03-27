@@ -41,7 +41,10 @@ return {
 		"ellisonleao/gruvbox.nvim",
 		config = function()
 			require("gruvbox").setup({
-				-- transparent_mode = true,
+				dim_inactive = false,
+				transparent_mode = false,
+				undercurl = false,
+				underline = false,
 				italic = {
 					strings = false,
 					emphasis = false,

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ lib, config, pkgs, ... }:
 
 {
     home.username = "nilsblix";
@@ -13,6 +13,7 @@
         alacritty
         cargo
         eza
+        fish
         fzf
         neovim
         nodejs_23
@@ -34,6 +35,19 @@
         ".config/aerospace/aerospace.toml".source = ../modules/darwin/aerospace.toml;
         ".config/karabiner/karabiner.json".source = ../modules/darwin/karabiner.json; # installed with brew
     };
+
+    imports = [
+        ../modules/shared/fish.nix
+    ];
+
+    # programs.fish = {
+    #     enable = true;
+    #     shellAliases = {
+    #         drs = "darwin-rebuild switch --flake";
+    #         hms = "home-manager switch --flake";
+    #         vim = "nvim";
+    #     };
+    # };
 
     programs.git = {
         enable = true;

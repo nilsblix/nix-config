@@ -9,7 +9,7 @@
 	environment.systemPackages = with pkgs; [
 		git
 		gh
-		zsh
+        zsh
 		home-manager
 		ripgrep
 	];
@@ -36,7 +36,14 @@
         ../modules/darwin/mac_options.nix
     ];
 
-	programs.zsh.enable = true;
+    users.knownUsers = [ "nilsblix" ];
+    users.users.nilsblix.uid = 501;
+    users.users.nilsblix = {
+        home = "/Users/nilsblix";
+        shell = pkgs.fish;
+    };
+    
+    programs.zsh.enable = true;
+    programs.fish.enable = true;
 
-    users.users.nilsblix.home = "/Users/nilsblix";
 }

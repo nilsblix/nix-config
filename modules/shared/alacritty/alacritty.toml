@@ -11,6 +11,9 @@ startup_mode = "Maximized"
 # opacity = 0.85
 # blur = true
 
+[cursor]
+style = "Underline"
+
 [mouse]
 hide_when_typing = true
 

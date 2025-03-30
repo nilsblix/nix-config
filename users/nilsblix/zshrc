@@ -1,0 +1,19 @@
+source <(fzf --zsh)
+
+# PROMPT='%F{red}[%F{yellow}%n%F{green}@%F{blue}%m%F{magenta} %~%F{red}]%f$ '
+
+PROMPT='%F{#44a64f}%n@%m%f:%F{blue}%~%f$ '
+
+alias proj="cd ~/personal"
+alias vim="nvim"
+
+alias l="eza --long --all"
+alias ls="eza"
+alias la="eza --all"
+alias ll="eza --long"
+
+alias hms="home-manager switch --flake"
+alias drs="darwin-rebuild switch --flake"
+
+export EDITOR=nvim
+export VISUAL=nvim

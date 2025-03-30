@@ -3,6 +3,7 @@
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+
         nix-darwin = {
             url = "github:LnL7/nix-darwin/master";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -17,28 +18,14 @@
     };
 
     outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew }: let
-        system = "aarch64-darwin";
-    in {
-        darwinConfigurations."nvb" = nix-darwin.lib.darwinSystem {
-		    inherit system;
-		    modules = [
-                ./nix/darwin-configuration.nix
-                home-manager.darwinModules.home-manager {
-                    home-manager.useGlobalPkgs = true;
-                    home-manager.useUserPackages = true;
-                    home-manager.users.nilsblix = import ./nix/home.nix;
-		        }
-                nix-homebrew.darwinModules.nix-homebrew {
-                    nix-homebrew.enable = true;
-                    nix-homebrew.enableRosetta = true;
-                    nix-homebrew.user = "nilsblix";
-                }
-            ];
+        mkSystem = import ./lib/mksystem.nix {
+            inherit nixpkgs inputs;
         };
-
-        homeConfigurations."nilsblix" = home-manager.lib.homeManagerConfiguration {
-            pkgs = nixpkgs.legacyPackages.${system};
-            modules = [ ./nix/home.nix ];
+    in {
+        darwinConfigurations."nilsblix" = mkSystem "macbook-pro-m1" {
+            system = "aarch64-darwin";
+            user = "nilsblix";
+            darwin = true;
         };
     };
 }

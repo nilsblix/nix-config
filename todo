@@ -1,0 +1,6 @@
+machines
+ - m1-macbook-pro
+ - maybe some darwin options here. defaults, hostname and such maybe
+
+users
+ - move configs to user

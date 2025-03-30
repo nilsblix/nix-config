@@ -12,7 +12,6 @@ alias ls="eza"
 alias la="eza --all"
 alias ll="eza --long"
 
-alias hms="home-manager switch --flake"
 alias drs="darwin-rebuild switch --flake"
 
 export EDITOR=nvim

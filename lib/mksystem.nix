@@ -1,3 +1,4 @@
+# A triple-function. (system, user, darwin) -> (name) -> (nixpkgs, inputs)
 { nixpkgs, inputs }:
 
 name: 
@@ -14,7 +15,7 @@ let
 
     systemFunc = if darwin then inputs.nix-darwin.lib.darwinSystem else nixpkgs.lib.nixosSystem;
     home-manager = if darwin then inputs.home-manager.darwinModules else inputs.home-manager.nixosModules;
-in systemFunc rec {
+in systemFunc {
     inherit system;
 
     modules = [

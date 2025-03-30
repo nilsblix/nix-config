@@ -8,8 +8,8 @@ size = 20.5
 title = "Alacritty"
 dynamic_title = false
 startup_mode = "Maximized"
-# opacity = 0.85
-# blur = true
+opacity = 0.85
+blur = true
 
 [mouse]
 hide_when_typing = true

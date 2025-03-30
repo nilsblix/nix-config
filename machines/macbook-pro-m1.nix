@@ -2,7 +2,6 @@
 {
     # As of sept 2024 macOS this is the current version
     system.stateVersion = 5;
-	# system.stateVersion = 4;
 	ids.gids.nixbld = 350;
 
     nix = {

@@ -32,7 +32,7 @@
 
         # darwin
         ".config/aerospace/aerospace.toml".source = ../modules/darwin/aerospace.toml;
-        ".config/karabiner".source = ../modules/darwin/karabiner; # installed with brew
+        ".config/karabiner/karabiner.json".source = ../modules/darwin/karabiner.json; # installed with brew
     };
 
     programs.git = {

@@ -24,10 +24,11 @@
     m = [ "workspace m", "mode main" ]
     n = [ "workspace n", "mode main" ]
     i = [ "workspace i", "mode main" ]
+    w = [ "workspace w", "mode main" ]
 
+    shift-r = "mode raycast"
     shift-m = "mode move_node"
-
-    o = "mode open"
+    shift-o = "mode open"
 
     t = [ "layout floating tiling", "mode main" ]
 
@@ -41,6 +42,7 @@
     m = [ "move-node-to-workspace m", "mode main" ]
     n = [ "move-node-to-workspace n", "mode main" ]
     i = [ "move-node-to-workspace i", "mode main" ]
+    w = [ "move-node-to-workspace w", "mode main" ]
 
 [mode.open.binding]
     esc = "mode main"
@@ -53,6 +55,7 @@
     s = [ "exec-and-forget open -a Spotify", "mode main" ]
     n = [ "exec-and-forget open -a Notes", "mode main" ]
     i = [ "exec-and-forget open -a Signal", "mode main" ]
+    w = [ "exec-and-forget open -a TV", "mode main" ]
 
 [mode.new_open.binding]
     esc = "mode main"
@@ -63,4 +66,10 @@
             activate
         end tell'
     ''', "mode main"]
+
+[mode.raycast.binding]
+    esc = "mode main"
+    
+    m = [ "exec-and-forget open raycast://extensions/raycast/window-management/maximize", "mode main" ]
+    a = [ "exec-and-forget open raycast://extensions/raycast/system/toggle-system-appearance", "mode main" ]
     

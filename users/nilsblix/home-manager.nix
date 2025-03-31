@@ -14,22 +14,25 @@ in {
 		git
 		gh
         zsh
-		home-manager
+        bash
+        fish
 		ripgrep
+
+		home-manager
 
         aerospace
         alacritty
         cargo
         eza
-        fish
         fzf
         neovim
-        nodejs_23
-        python39
         tmux
         tokei
         yazi
-        zig_0_14
+
+        # nodejs_23
+        # python39
+        # zig_0_14
     ];
 
     home.file = {
@@ -42,9 +45,32 @@ in {
         ".config/karabiner/karabiner.json".source = ./karabiner.json;
     } else {});
 
-    imports = [
-        ./fish.nix
-    ];
+    # imports = [
+    #     ./fish.nix
+    # ];
+
+    programs.fish = {
+        enable = true;
+        interactiveShellInit = lib.strings.concatStrings (lib.strings.intersperse "\n" ([
+            (builtins.readFile ./config.fish) 
+        ]));
+        shellAliases = {
+            drs = "darwin-rebuild switch --flake";
+            vim = "nvim";
+            l = "ls -al";
+        };
+    };
+
+    programs.bash = {
+        enable = true;
+        shellAliases = {
+            vim = "nvim";
+            l = "ls -al";
+        };
+        initExtra = ''
+            PS1="bash->\u@\h:\w\$ "
+        '';
+    };
 
     programs.git = {
         enable = true;

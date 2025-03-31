@@ -5,7 +5,7 @@
     users.users.nilsblix.uid = 501;
     users.users.nilsblix = {
         home = "/Users/nilsblix";
-        shell = pkgs.zsh;
+        shell = pkgs.fish;
     };
 
     imports = [

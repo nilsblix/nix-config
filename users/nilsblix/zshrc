@@ -1,7 +1,5 @@
 source <(fzf --zsh)
 
-# PROMPT='%F{red}[%F{yellow}%n%F{green}@%F{blue}%m%F{magenta} %~%F{red}]%f$ '
-
 PROMPT='%F{#44a64f}%n@%m%f:%F{blue}%~%f$ '
 
 alias proj="cd ~/personal"

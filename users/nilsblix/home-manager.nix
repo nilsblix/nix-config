@@ -11,14 +11,14 @@ in {
     programs.home-manager.enable = true;
 
     home.packages = with pkgs; [ # alphabetical order
-		git
-		gh
+        git
+        gh
         zsh
         bash
         fish
-		ripgrep
 
-		home-manager
+        ripgrep
+        home-manager
 
         aerospace
         alacritty

@@ -1,6 +1,11 @@
-{ inputs, pkgs, ...}: 
+{ nhomebrew, pkgs, inputs, ...}: 
 
 {
+
+    imports = [
+        ./fonts.nix
+    ];
+
     users.knownUsers = [ "nilsblix" ];
     users.users.nilsblix.uid = 501;
     users.users.nilsblix = {
@@ -8,21 +13,15 @@
         shell = pkgs.fish;
     };
 
-    imports = [
-        ./fonts.nix
-    ];
-
     homebrew = {
         enable = true;
-		casks = [
-            "google-chrome"
-			"raycast"
-			"karabiner-elements"
-            "signal"
-			"spotify"
-			"surfshark"
-		];
-		onActivation.cleanup = "zap";
+        # casks = [
+            # "google-chrome"
+            # "karabiner-elements"
+            # "signal"
+            # "surfshark"
+        # ];
+        onActivation.cleanup = "zap";
     };
 
     system = {
@@ -45,6 +44,7 @@
             NSGlobalDomain = {
                 KeyRepeat = 2; # how long between each repeat
                 InitialKeyRepeat = 20; # how long before repeating
+                NSWindowShouldDragOnGesture = true;
             };
 
             CustomUserPreferences = {
@@ -61,3 +61,4 @@
         display = 30;
     };
 }
+

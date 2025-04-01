@@ -15,11 +15,19 @@
         };
 
         nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+        homebrew-core = {
+            url = "github:homebrew/homebrew-core";
+            flake = false;
+        };
+        homebrew-cask = {
+            url = "github:homebrew/homebrew-cask";
+            flake = false;
+        };
     };
 
-    outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew }: let
+    outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask }: let
         mkSystem = import ./lib/mksystem.nix {
-            inherit nixpkgs inputs;
+            inherit nix-homebrew nixpkgs inputs;
         };
     in {
         darwinConfigurations."nilsblix" = mkSystem "macbook-pro-m1" {

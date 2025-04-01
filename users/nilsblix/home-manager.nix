@@ -20,7 +20,6 @@ in {
         ripgrep
         home-manager
 
-        aerospace
         alacritty
         cargo
         eza
@@ -33,7 +32,12 @@ in {
         nodejs_23
         python39
         zig_0_14
-    ];
+
+        spotify
+    ] ++ (if isDarwin then [
+        raycast
+        aerospace
+    ] else []);
 
     home.file = {
         ".zshrc".source = ./zshrc;

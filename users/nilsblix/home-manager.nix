@@ -30,9 +30,9 @@ in {
         tokei
         yazi
 
-        # nodejs_23
-        # python39
-        # zig_0_14
+        nodejs_23
+        python39
+        zig_0_14
     ];
 
     home.file = {

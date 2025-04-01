@@ -1,15 +1,15 @@
 [font]
-# normal = { family = "Menlo" }
-normal = { family = "Hack Nerd Font Mono" }
-# normal = { family = "Iosevka Nerd Font Mono" }
+# normal = { family = "Hack Nerd Font Mono" }
+normal = { family = "FiraCode Nerd Font", style = "Regular" }
+# normal = { family = "RobotoMono Nerd Font", style = "Regular" }
 size = 20.5
 
 [window]
 title = "Alacritty"
 dynamic_title = false
 startup_mode = "Maximized"
-# opacity = 0.85
-# blur = true
+opacity = 0.85
+blur = true
 
 [mouse]
 hide_when_typing = true

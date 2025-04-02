@@ -42,7 +42,7 @@ return {
 		config = function()
 			require("gruvbox").setup({
 				dim_inactive = false,
-				transparent_mode = false,
+				transparent_mode = true,
 				undercurl = false,
 				underline = false,
 				italic = {
@@ -53,16 +53,16 @@ return {
 					operators = false,
 				},
 				overrides = {
-					StatusLine = { bg = "#ababab", fg = "#3E1018" },
-					StatusLineNC = { bg = "#3c3836", fg = "#1E2018" },
+					StatusLine = { fg = "#ababab", bg = "#3E1018" },
+					StatusLineNC = { fg = "#3c3836", bg = "#1E2018" },
 				},
 			})
 			vim.cmd.colorscheme("gruvbox")
-			vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-			vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-
-			vim.cmd("highlight SignColumn guibg=NONE")
-			vim.cmd("highlight LineNr guibg=NONE")
+			-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+			-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+			--
+			-- vim.cmd("highlight SignColumn guibg=NONE")
+			-- vim.cmd("highlight LineNr guibg=NONE")
 		end,
 	},
 }

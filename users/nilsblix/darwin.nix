@@ -10,17 +10,17 @@
     users.users.nilsblix.uid = 501;
     users.users.nilsblix = {
         home = "/Users/nilsblix";
-        shell = pkgs.fish;
+        shell = pkgs.zsh;
     };
 
     homebrew = {
         enable = true;
-        # casks = [
-            # "google-chrome"
-            # "karabiner-elements"
+        casks = [
+            "google-chrome"
+            "karabiner-elements"
             # "signal"
-            # "surfshark"
-        # ];
+            "surfshark"
+        ];
         onActivation.cleanup = "zap";
     };
 

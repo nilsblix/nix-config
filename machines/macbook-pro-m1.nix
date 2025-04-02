@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
     # As of sept 2024 macOS this is the current version
     system.stateVersion = 5;

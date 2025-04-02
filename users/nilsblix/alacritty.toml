@@ -2,7 +2,7 @@
 # normal = { family = "Hack Nerd Font Mono" }
 normal = { family = "FiraCode Nerd Font", style = "Regular" }
 # normal = { family = "RobotoMono Nerd Font", style = "Regular" }
-size = 20.5
+size = 20
 
 [window]
 title = "Alacritty"
@@ -10,6 +10,9 @@ dynamic_title = false
 startup_mode = "Maximized"
 opacity = 0.85
 blur = true
+
+# [colors.primary]
+# background = "#000000"
 
 [mouse]
 hide_when_typing = true

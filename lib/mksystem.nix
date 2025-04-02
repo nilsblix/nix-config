@@ -1,5 +1,5 @@
 # A triple-function. (system, user, darwin) -> (name) -> (nix-homebrew, nixpkgs, inputs)
-{ nix-homebrew, nixpkgs, inputs }:
+{ nix-homebrew, nixpkgs, inputs, ... }:
 
 name: 
 {
@@ -22,6 +22,18 @@ in systemFunc {
 
         { nixpkgs.config.allowUnfree = true; }
 
+        nix-homebrew.darwinModules.nix-homebrew {
+            nix-homebrew = {
+                enable = true;
+                enableRosetta = true;
+                user = "nilsblix";
+                taps = {
+                    "homebrew/homebrew-core" = inputs.homebrew-core;
+                    "homebrew/homebrew-cask" = inputs.homebrew-cask;
+                };
+            };
+        }
+
         machineConfig
         userOSConfig
         home-manager.home-manager {
@@ -31,19 +43,5 @@ in systemFunc {
                 inputs = inputs;
             };
         }
-
-        nix-homebrew.darwinModules.nix-homebrew {
-            nix-homebrew = {
-                enable = true;
-                enableRosetta = true;
-                user = "nilsblix";
-                mutableTaps = false;
-                taps = {
-                    "homebrew/homebrew-core" = inputs.homebrew-core;
-                    "homebrew/homebrew-cask" = inputs.homebrew-cask;
-                };
-            };
-        }
-
     ];
 }

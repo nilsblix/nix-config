@@ -33,7 +33,9 @@
         darwinConfigurations."nilsblix" = mkSystem "macbook-pro-m1" {
             system = "aarch64-darwin";
             user = "nilsblix";
-            darwin = true;
+            darwin = {
+                setupHomebrew = true;
+            };
         };
     };
 }

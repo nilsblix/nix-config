@@ -1,7 +1,6 @@
-{ nhomebrew, pkgs, inputs, ...}: 
+{ nix-homebrew, pkgs, inputs, ...}: 
 
 {
-
     imports = [
         ./fonts.nix
     ];

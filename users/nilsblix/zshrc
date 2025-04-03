@@ -1,4 +1,5 @@
 source <(fzf --zsh)
+eval "$(zoxide init zsh)"
 
 # PROMPT='%F{#44a64f}%n@%m%f:%F{blue}%~%f$ '
 
@@ -11,6 +12,8 @@ alias l="eza --long --all"
 alias ls="eza"
 alias la="eza --all"
 alias ll="eza --long"
+
+alias cd="z"
 
 alias drs="darwin-rebuild switch --flake"
 

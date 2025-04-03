@@ -25,9 +25,11 @@ in {
         eza
         fzf
         neovim
+        sesh
         tmux
         tokei
         yazi
+        zoxide
 
         nodejs_23
         python39
@@ -43,15 +45,15 @@ in {
         ".zshrc".source = ./zshrc;
         ".config/nvim".source = ./nvim;
         ".config/alacritty.toml".source = ./alacritty.toml;
-        ".tmux.conf".source = ./tmux.conf;
+        # ".tmux.conf".source = ./tmux.conf;
     } // (if isDarwin then {
         ".config/aerospace/aerospace.toml".source = ./aerospace.toml;
         ".config/karabiner/karabiner.json".source = ./karabiner.json;
     } else {});
 
-    # imports = [
-    #     ./fish.nix
-    # ];
+    imports = [
+        ./tmux.nix
+    ];
 
     programs.fish = {
         enable = true;

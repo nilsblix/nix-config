@@ -45,7 +45,6 @@ in {
         ".zshrc".source = ./zshrc;
         ".config/nvim".source = ./nvim;
         ".config/alacritty.toml".source = ./alacritty.toml;
-        # ".tmux.conf".source = ./tmux.conf;
     } // (if isDarwin then {
         ".config/aerospace/aerospace.toml".source = ./aerospace.toml;
         ".config/karabiner/karabiner.json".source = ./karabiner.json;

@@ -49,6 +49,7 @@
             set -g status-left " #S "
             set -g status-right " #{=-40:#{pane_current_path}} "
 
+            set -g status-left-length 100
             set -g status-right-length 100
         '';
     };

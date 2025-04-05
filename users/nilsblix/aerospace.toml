@@ -26,6 +26,16 @@
     i = [ "workspace i", "mode main" ]
     w = [ "workspace w", "mode main" ]
 
+    h = [ "focus left", "mode main" ]
+    j = [ "focus down", "mode main" ]
+    k = [ "focus up", "mode main" ]
+    l = [ "focus right", "mode main" ]
+
+    shift-h = [ "move left", "mode main" ]
+    shift-j = [ "move down", "mode main" ]
+    shift-k = [ "move up", "mode main" ]
+    shift-l = [ "move right", "mode main" ]
+
     shift-r = "mode raycast"
     shift-m = "mode move_node"
     shift-o = "mode open"

@@ -12,7 +12,7 @@ size = 24
 title = "Alacritty"
 dynamic_title = false
 startup_mode = "Maximized"
-# opacity = 0.80
+opacity = 0.85
 # blur = true
 
 [colors.primary]

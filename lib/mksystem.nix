@@ -7,7 +7,7 @@ name:
     user,
     darwin ? { setupHomebrew = false; }, # If setupHomebrew is false it will still download
     # casks and brews. setupHomebrew only installs homebrew with nix-homebrew and setups
-    # declarative taps.
+    # declarative taps. All homebrew config is done via `homebrew.*`
 }:
 
 let

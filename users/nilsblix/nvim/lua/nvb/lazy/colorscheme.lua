@@ -1,5 +1,5 @@
 function ColorMyself(color)
-	color = color or "tokyonight-storm"
+	color = color or "gruvbox"
 
 	vim.cmd.colorscheme(color)
 
@@ -53,7 +53,7 @@ return {
 					operators = false,
 				},
 				overrides = {
-					StatusLine = { fg = "#ababab", bg = "#3E1018" },
+					StatusLine = { fg = "#646475", bg = "#3E1018" },
 					StatusLineNC = { fg = "#3c3836", bg = "#1E2018" },
 				},
 			})

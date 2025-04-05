@@ -1,18 +1,22 @@
+[env]
+TERM = "screen-256color"
+
 [font]
 # normal = { family = "Hack Nerd Font Mono" }
 normal = { family = "FiraCode Nerd Font", style = "Regular" }
 # normal = { family = "RobotoMono Nerd Font", style = "Regular" }
-size = 20
+# size = 20
+size = 24
 
 [window]
 title = "Alacritty"
 dynamic_title = false
 startup_mode = "Maximized"
-opacity = 0.95
-blur = true
+# opacity = 0.80
+# blur = true
 
-# [colors.primary]
-# background = "#000000"
+[colors.primary]
+background = "#131313"
 
 [mouse]
 hide_when_typing = true

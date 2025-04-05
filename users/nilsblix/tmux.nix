@@ -33,20 +33,23 @@
 
             set -g mouse on
 
+            set -sg escape-time 0
+
             set -g base-index 1
             set -g detach-on-destroy off
+
+            set -g status-justify absolute-centre
+
             set -g message-style "bg=color88,fg=white"
             set -g mode-style "bg=color88,fg=white"
 
-            set -g status-bg color236
-            set -g status-fg white
+            set -g status-style "fg=#D0D0D0 bg=#000000"
+            set -g window-status-current-style "fg=color1 bold"
 
-            set -g status-left "[#S] "
-            set -g status-right "#{=-40:#{pane_current_path}} #h"
+            set -g status-left " #S "
+            set -g status-right " #{=-40:#{pane_current_path}} "
 
             set -g status-right-length 100
-
-            set -g window-status-current-style "bg=color60"
         '';
     };
 }

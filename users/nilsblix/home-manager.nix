@@ -42,7 +42,6 @@ in {
     ] else []);
 
     home.file = {
-        ".zshrc".source = ./zshrc;
         ".config/nvim".source = ./nvim;
         ".config/alacritty.toml".source = ./alacritty.toml;
     } // (if isDarwin then {
@@ -52,30 +51,8 @@ in {
 
     imports = [
         ./tmux.nix
+        ./shells.nix
     ];
-
-    programs.fish = {
-        enable = true;
-        interactiveShellInit = lib.strings.concatStrings (lib.strings.intersperse "\n" ([
-            (builtins.readFile ./config.fish) 
-        ]));
-        shellAliases = {
-            drs = "darwin-rebuild switch --flake";
-            vim = "nvim";
-            l = "ls -al";
-        };
-    };
-
-    programs.bash = {
-        enable = true;
-        shellAliases = {
-            vim = "nvim";
-            l = "ls -al";
-        };
-        initExtra = ''
-            PS1="bash->\u@\h:\w\$ "
-        '';
-    };
 
     programs.git = {
         enable = true;

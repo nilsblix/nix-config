@@ -1,5 +1,5 @@
 {
-    description = "nvb nix flake";
+    description = "nilsblix flake";
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -25,9 +25,9 @@
         };
     };
 
-    outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask }: let
+    outputs = { self, nixpkgs, home-manager, nix-darwin, ... }@inputs: let
         mkSystem = import ./lib/mksystem.nix {
-            inherit nix-homebrew nixpkgs inputs;
+            inherit nixpkgs inputs;
         };
     in {
         darwinConfigurations."nilsblix" = mkSystem "macbook-pro-m1" {

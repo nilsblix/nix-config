@@ -1,5 +1,5 @@
-# A triple-function. (system, user, darwin) -> (name) -> (nix-homebrew, nixpkgs, inputs)
-{ nix-homebrew, nixpkgs, inputs, ... }:
+# A triple-function. (system, user, darwin) -> (name) -> (nixpkgs, inputs)
+{ nixpkgs, inputs, ... }:
 
 name: 
 {
@@ -46,7 +46,7 @@ in systemFunc rec {
             };
         }
     ] ++ (if darwin.setupHomebrew then [
-        nix-homebrew.darwinModules.nix-homebrew {
+        inputs.nix-homebrew.darwinModules.nix-homebrew {
             nix-homebrew = {
                 enable = true;
                 enableRosetta = true;

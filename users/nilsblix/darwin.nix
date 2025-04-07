@@ -36,8 +36,9 @@
             };
             controlcenter = {
                 Sound = true;
-                Bluetooth = true;
+                Bluetooth = false;
                 NowPlaying = false;
+                FocusModes = false;
             };
 
             NSGlobalDomain = {

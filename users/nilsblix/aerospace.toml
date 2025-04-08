@@ -27,7 +27,6 @@
     s = [ "workspace s", "mode main" ]
     m = [ "workspace m", "mode main" ]
     n = [ "workspace n", "mode main" ]
-    i = [ "workspace i", "mode main" ]
     w = [ "workspace w", "mode main" ]
 
     h = [ "focus left", "mode main" ]
@@ -40,11 +39,25 @@
     shift-k = [ "move up", "mode main" ]
     shift-l = [ "move right", "mode main" ]
 
+    shift-w = "mode workspaces"
     shift-r = "mode raycast"
     shift-m = "mode move_node"
     shift-o = "mode open"
 
     t = [ "layout floating tiling", "mode main" ]
+
+[mode.workspaces.binding]
+    esc = "mode main"
+
+    h = [ "focus-monitor left", "mode main" ]
+    j = [ "focus-monitor down", "mode main" ]
+    k = [ "focus-monitor up", "mode main" ]
+    l = [ "focus-monitor right", "mode main" ]
+    
+    shift-h = [ "move-workspace-to-monitor left", "mode main" ]
+    shift-j = [ "move-workspace-to-monitor down", "mode main" ]
+    shift-k = [ "move-workspace-to-monitor up", "mode main" ]
+    shift-l = [ "move-workspace-to-monitor right", "mode main" ]
 
 [mode.move_node.binding]
     esc = "mode main"
@@ -55,7 +68,6 @@
     s = [ "move-node-to-workspace s", "mode main" ]
     m = [ "move-node-to-workspace m", "mode main" ]
     n = [ "move-node-to-workspace n", "mode main" ]
-    i = [ "move-node-to-workspace i", "mode main" ]
     w = [ "move-node-to-workspace w", "mode main" ]
 
 [mode.open.binding]
@@ -67,7 +79,6 @@
     m = [ "exec-and-forget open -a Messages", "mode main" ]
     s = [ "exec-and-forget open -a Spotify", "mode main" ]
     n = [ "exec-and-forget open -a Notes", "mode main" ]
-    i = [ "exec-and-forget open -a Signal", "mode main" ]
     w = [ "exec-and-forget open -a TV", "mode main" ]
 
 [mode.raycast.binding]

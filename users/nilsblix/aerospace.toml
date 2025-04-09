@@ -28,6 +28,7 @@
     m = [ "workspace m", "mode main" ]
     n = [ "workspace n", "mode main" ]
     w = [ "workspace w", "mode main" ]
+    t = [ "workspace t", "mode main" ]
 
     h = [ "focus left", "mode main" ]
     j = [ "focus down", "mode main" ]
@@ -44,7 +45,7 @@
     shift-m = "mode move_node"
     shift-o = "mode open"
 
-    t = [ "layout floating tiling", "mode main" ]
+    shift-t = [ "layout floating tiling", "mode main" ]
 
 [mode.workspaces.binding]
     esc = "mode main"
@@ -69,6 +70,7 @@
     m = [ "move-node-to-workspace m", "mode main" ]
     n = [ "move-node-to-workspace n", "mode main" ]
     w = [ "move-node-to-workspace w", "mode main" ]
+    t = [ "move-node-to-workspace t", "mode main" ]
 
 [mode.open.binding]
     esc = "mode main"

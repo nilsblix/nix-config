@@ -6,14 +6,11 @@ function ColorMyself(color)
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
-	vim.cmd("hi Comment cterm=NONE gui=NONE")
-	vim.cmd("hi Keyword cterm=NONE gui=NONE")
-	vim.cmd("hi Identifier cterm=NONE gui=NONE")
-	vim.cmd("hi Type cterm=NONE gui=NONE")
-	vim.cmd("hi Function cterm=NONE gui=NONE")
-
 	vim.cmd("highlight SignColumn guibg=NONE")
 	vim.cmd("highlight LineNr guibg=NONE")
+
+	vim.api.nvim_set_hl(0, "StatusLine", { fg = "#646475", bg = "#3E1018" })
+	vim.api.nvim_set_hl(0, "StatusLineNC", { fg = "#3c3836", bg = "#1E2018" })
 end
 
 return {
@@ -21,20 +18,6 @@ return {
 		"brenoprata10/nvim-highlight-colors",
 		config = function()
 			require("nvim-highlight-colors").setup({})
-		end,
-	},
-	{
-		"folke/tokyonight.nvim",
-		config = function()
-			require("tokyonight").setup({
-				styles = {
-					comments = { italic = false },
-					keywords = { italic = false },
-					functions = { italic = false },
-					variables = { italic = false },
-				},
-			})
-			-- ColorMyself()
 		end,
 	},
 	{

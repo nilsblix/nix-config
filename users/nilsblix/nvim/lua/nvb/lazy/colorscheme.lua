@@ -38,6 +38,12 @@ return {
 		end,
 	},
 	{
+		"vague2k/vague.nvim",
+		config = function()
+			ColorMyself("vague")
+		end,
+	},
+	{
 		"ellisonleao/gruvbox.nvim",
 		config = function()
 			require("gruvbox").setup({
@@ -57,7 +63,7 @@ return {
 					StatusLineNC = { fg = "#3c3836", bg = "#1E2018" },
 				},
 			})
-			vim.cmd.colorscheme("gruvbox")
+			-- vim.cmd.colorscheme("gruvbox")
 		end,
 	},
 }

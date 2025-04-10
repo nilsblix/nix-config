@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }: {
+{ lib, ... }: {
     programs.zsh = {
         enable = true;
         shellAliases = {
@@ -15,13 +15,8 @@
             eval "$(zoxide init zsh)"
         '';
         initExtra = ''
-            # PROMPT='%F{#20536d}%n%F{#460854}@%F{#98c5a0}%m%F{#DEDEDE}:%F{#5777a1}%~%f
-            # %F{#4bc287}$ %F{#DEDEDE}'
-            # PROMPT='%F{#4bc287}╔ %F{#20536d}%n%F{#460854}@%F{#98c5a0}%m%F{#DEDEDE}:%F{#5777a1}%~%f
-            # %F{#4bc287}╚═> %F{#DEDEDE}'
             PROMPT='%F{#4bc287}╭%F{#20536d}%n%F{#460854}@%F{#98c5a0}%m%F{#DEDEDE}:%F{#5777a1}%~%f
             %F{#4bc287}╰─> %F{#DEDEDE}'
-
         '';
     };
 

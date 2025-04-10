@@ -12,11 +12,12 @@ size = 24
 title = "Alacritty"
 dynamic_title = false
 startup_mode = "Maximized"
-opacity = 0.85
+# opacity = 0.85
 # blur = true
 
 [colors.primary]
-background = "#131313"
+# background = "#131313"
+background = "#000000"
 
 [mouse]
 hide_when_typing = true

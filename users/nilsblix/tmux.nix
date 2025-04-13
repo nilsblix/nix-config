@@ -39,10 +39,13 @@
             set -g base-index 1
             set -g detach-on-destroy off
 
-            set -g status-justify absolute-centre
-
+            # colors
             set -g message-style "bg=color88,fg=white"
             set -g mode-style "bg=color88,fg=white"
+
+            # status bar
+            set -g status-position bottom
+            set -g status-justify absolute-centre
 
             set -g status-style "fg=#D0D0D0 bg=#000000"
             set -g window-status-current-style "fg=color1 bold"

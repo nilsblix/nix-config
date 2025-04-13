@@ -82,6 +82,7 @@
     s = [ "exec-and-forget open -a Spotify", "mode main" ]
     n = [ "exec-and-forget open -a Notes", "mode main" ]
     w = [ "exec-and-forget open -a TV", "mode main" ]
+    v = [ "exec-and-forget open -a SurfShark", "mode main" ]
 
 [mode.raycast.binding]
     esc = "mode main"

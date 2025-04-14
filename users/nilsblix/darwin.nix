@@ -17,7 +17,6 @@
         casks = [
             "google-chrome"
             "karabiner-elements"
-            # "signal"
             "surfshark"
         ];
         onActivation.cleanup = "zap";

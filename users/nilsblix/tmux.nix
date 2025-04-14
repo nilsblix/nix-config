@@ -32,6 +32,9 @@
             unbind E
             bind E kill-window
 
+            unbind l
+            bind l switchc -l
+
             set -g mouse on
 
             set -sg escape-time 0

@@ -2,9 +2,6 @@
 
 { config, lib, pkgs, ... }: let
     isDarwin = pkgs.stdenv.isDarwin;
-    hidden =
-        if builtins.pathExists ./git.nix.hidden then import ./git.nix.hidden
-        else { userEmail = "noreply@example.com"; };
 in {
     home.username = "nilsblix";
     home.homeDirectory = "/Users/nilsblix";
@@ -60,7 +57,7 @@ in {
     programs.git = {
         enable = true;
         userName = "nilsblix";
-        userEmail = hidden.userEmail;
+        userEmail = "nilsblix06@gmail.com";
 
         extraConfig = {
             github.user = "nilsblix";

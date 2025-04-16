@@ -11,26 +11,28 @@ in {
     programs.home-manager.enable = true;
 
     home.packages = with pkgs; [ # alphabetical order
+        home-manager
+
         git
         gh
         zsh
         bash
         fish
-
         ripgrep
-        home-manager
 
         alacritty
-        cargo
         eza
         fzf
         neovim
         sesh
         tmux
         tokei
+        tree
         yazi
         zoxide
+        tree
 
+        cargo
         nodejs_23
         python39
         zig_0_14

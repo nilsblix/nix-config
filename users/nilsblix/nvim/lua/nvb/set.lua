@@ -12,6 +12,9 @@ vim.opt.mouse = "a"
 
 vim.opt.scrolloff = 10
 
+vim.opt.termguicolors = true
+vim.opt.incsearch = true
+
 vim.cmd("let g:netrw_banner = 0")
 
 vim.schedule(function()

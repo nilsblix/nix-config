@@ -5,6 +5,9 @@
             tmuxPlugins.tmux-fzf
         ];
         extraConfig = ''
+            set -g default-terminal "xterm-256color"
+            set -ga terminal-overrides ",xterm-256color:Tc"
+
             unbind r
             bind r source-file ~/.config/tmux/tmux.conf\; display-message "Config reloaded..."
 
@@ -12,7 +15,7 @@
             unbind t
             bind "t" run-shell "sesh connect \"$(
               sesh list --icons | fzf-tmux -p 100%,100% \
-                --no-sort --ansi --border-label ' sesh ' --prompt '->  ' \
+                --no-sort --ansi --prompt '->  ' \
             )\""
 
             unbind C-Space

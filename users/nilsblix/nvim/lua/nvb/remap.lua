@@ -8,8 +8,6 @@ vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>")
 vim.keymap.set("n", "<leader>h", "_")
 vim.keymap.set("n", "<leader>e", "$")
 
-vim.keymap.set("n", "<leader>E", "<cmd>lua vim.diagnostic.open_float()<CR>")
-
 vim.keymap.set("n", "<leader>p", "<C-^>")
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")

@@ -151,7 +151,7 @@ return {
                     vim.lsp.buf.definition()
                 end, opts)
                 vim.keymap.set("n", "K", function()
-                    vim.lsp.buf.hover()
+                    vim.lsp.buf.hover({ border = "rounded" })
                 end, opts)
                 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
                 vim.keymap.set("n", "<leader>ca", function()

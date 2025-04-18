@@ -9,6 +9,7 @@ return {
         "hrsh7th/cmp-cmdline",
         "jcha0713/cmp-tw2css",
         "hrsh7th/nvim-cmp",
+        { "j-hui/fidget.nvim", opts = {} },
     },
 
     config = function()
@@ -133,6 +134,7 @@ return {
                     end,
                 },
                 { name = "cmp-tw2css" },
+                { name = "luasnip" },
             }, {}),
         })
 
